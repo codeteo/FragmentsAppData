@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLayoutActivity" >
+
+    
+      <fragment android:name="org.example.fragmentsappdata.passnumber.Fragments_A"
+              android:id="@+id/id_frag_A"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp" />
+
+      <fragment
+          android:id="@+id/id_frag_B"
+          android:name="org.example.fragmentsappdata.passnumber.Fragments_B"
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          android:layout_below="@id/id_frag_A" />
+
+</RelativeLayout>

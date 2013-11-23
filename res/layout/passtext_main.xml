@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLayoutActivity" >
+
+    
+      <fragment android:name="org.example.fragmentsappdata.passtext.Fragments_A"
+              android:id="@+id/id_frag_A"
+              android:layout_width="100dp"
+              android:layout_height="150dp"
+              android:layout_marginBottom="20dp" />
+
+      <fragment
+          android:id="@+id/id_frag_B"
+          android:name="org.example.fragmentsappdata.passtext.Fragments_B"
+          android:layout_width="100dp"
+          android:layout_height="150dp"
+          android:layout_below="@id/id_frag_A" />
+      
+      <TextView
+          android:background="@drawable/passtext_back_main"
+          android:id="@+id/tv1"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:paddingLeft="30dp"
+          android:layout_below="@id/id_frag_B"
+          android:text="Activity's Initial Text" />
+
+</RelativeLayout>
+
+      
